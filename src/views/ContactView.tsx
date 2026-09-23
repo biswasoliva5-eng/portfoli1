@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { usePortfolio } from '../context/PortfolioContext.js';
+import { usePortfolio } from '../context/PortfolioContext';
 import { Mail, MapPin, Send, CheckCircle2, AlertCircle, Instagram, Linkedin, Globe } from 'lucide-react';
-import { api } from '../api/client.js';
+import { api } from '../api/client';
 
 export const ContactView: React.FC = () => {
   const { data, showToast } = usePortfolio();

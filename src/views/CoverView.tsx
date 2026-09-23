@@ -1,6 +1,6 @@
 import React from 'react';
-import { usePortfolio } from '../context/PortfolioContext.js';
-import { CoverPosition } from '../types.js';
+import { usePortfolio } from '../context/PortfolioContext';
+import { CoverPosition } from '../types';
 
 export const CoverView: React.FC = () => {
   const { data, navigate, enterPortfolio } = usePortfolio();

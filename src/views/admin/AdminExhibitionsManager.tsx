@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { usePortfolio } from '../../context/PortfolioContext.js';
+import { usePortfolio } from '../../context/PortfolioContext';
 import { Plus, Edit2, Trash2, Calendar, MapPin, ExternalLink, X, Check } from 'lucide-react';
-import { Exhibition, ExhibitionType } from '../../types.js';
-import { api } from '../../api/client.js';
-import { DeleteConfirmModal } from '../../components/DeleteConfirmModal.js';
+import { Exhibition, ExhibitionType } from '../../types';
+import { api } from '../../api/client';
+import { DeleteConfirmModal } from '../../components/DeleteConfirmModal';
 
 export const AdminExhibitionsManager: React.FC = () => {
   const { data, reloadData, showToast } = usePortfolio();

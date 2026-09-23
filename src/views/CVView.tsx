@@ -1,5 +1,5 @@
 import React from 'react';
-import { usePortfolio } from '../context/PortfolioContext.js';
+import { usePortfolio } from '../context/PortfolioContext';
 import { Download, FileText, Calendar, ExternalLink } from 'lucide-react';
 
 export const CVView: React.FC = () => {

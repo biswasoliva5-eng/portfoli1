@@ -9,7 +9,7 @@ import {
   SiteSettings,
   ContactMessage,
   AdminAuthResponse,
-} from '../types.js';
+} from '../types';
 import {
   getLocalPortfolioData,
   getLocalPortfolioDataAsync,
@@ -17,8 +17,8 @@ import {
   saveLocalPortfolioDataAsync,
   getLocalAdminPassword,
   setLocalAdminPassword,
-} from '../data/defaultPortfolioData.js';
-import { compressImage } from '../utils/imageCompressor.js';
+} from '../data/defaultPortfolioData';
+import { compressImage } from '../utils/imageCompressor';
 import {
   getFirestorePortfolioData,
   saveFirestoreSettings,
@@ -33,7 +33,7 @@ import {
   saveFirestoreSocialLinks,
   saveFirestoreInquiry,
   deleteFirestoreInquiry,
-} from '../lib/firestoreService.js';
+} from '../lib/firestoreService';
 
 const AUTH_TOKEN_KEY = 'oliva_biswas_admin_token';
 const AUTH_USER_KEY = 'oliva_biswas_admin_user';

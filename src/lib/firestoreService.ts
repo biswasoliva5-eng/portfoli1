@@ -7,7 +7,7 @@ import {
   deleteDoc,
   writeBatch
 } from 'firebase/firestore';
-import { db } from './firebase.js';
+import { db } from './firebase';
 import {
   PortfolioData,
   SiteSettings,
@@ -18,8 +18,8 @@ import {
   ContactMessage,
   SocialLink,
   CVDoc
-} from '../types.js';
-import { defaultPortfolioData, defaultSettings } from '../data/defaultPortfolioData.js';
+} from '../types';
+import { defaultPortfolioData, defaultSettings } from '../data/defaultPortfolioData';
 
 const SETTINGS_DOC = 'site_settings/global';
 const ABOUT_DOC = 'about/content';

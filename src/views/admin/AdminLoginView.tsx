@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { usePortfolio } from '../../context/PortfolioContext.js';
+import { usePortfolio } from '../../context/PortfolioContext';
 import { Shield, Lock, User, ArrowRight, AlertCircle, Eye, EyeOff } from 'lucide-react';
-import { api } from '../../api/client.js';
+import { api } from '../../api/client';
 
 export const AdminLoginView: React.FC = () => {
   const { loginAdmin, navigate } = usePortfolio();

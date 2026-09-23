@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { usePortfolio } from '../../context/PortfolioContext.js';
+import { usePortfolio } from '../../context/PortfolioContext';
 import {
   Upload,
   Check,
@@ -12,9 +12,9 @@ import {
   Info,
   RotateCcw,
 } from 'lucide-react';
-import { api } from '../../api/client.js';
-import { ImageEditorModal } from '../../components/ImageEditorModal.js';
-import { CoverPosition } from '../../types.js';
+import { api } from '../../api/client';
+import { ImageEditorModal } from '../../components/ImageEditorModal';
+import { CoverPosition } from '../../types';
 
 export const AdminHomepageManager: React.FC = () => {
   const { data, reloadData, showToast } = usePortfolio();

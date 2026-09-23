@@ -1,7 +1,7 @@
 import React, { useState, useMemo } from 'react';
-import { usePortfolio } from '../context/PortfolioContext.js';
+import { usePortfolio } from '../context/PortfolioContext';
 import { ArrowLeft, ChevronLeft, ChevronRight, Eye, Mail, Share2, Check, Video, Image as ImageIcon } from 'lucide-react';
-import { Lightbox } from '../components/Lightbox.js';
+import { Lightbox } from '../components/Lightbox';
 
 interface ArtworkDetailViewProps {
   slug: string;

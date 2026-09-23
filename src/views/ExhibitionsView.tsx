@@ -1,7 +1,7 @@
 import React, { useState, useMemo } from 'react';
-import { usePortfolio } from '../context/PortfolioContext.js';
+import { usePortfolio } from '../context/PortfolioContext';
 import { MapPin, ExternalLink, Calendar, Filter } from 'lucide-react';
-import { ExhibitionType } from '../types.js';
+import { ExhibitionType } from '../types';
 
 export const ExhibitionsView: React.FC = () => {
   const { data } = usePortfolio();

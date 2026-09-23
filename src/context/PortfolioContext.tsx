@@ -8,8 +8,8 @@ import {
   AboutContent,
   CVDoc,
   SocialLink,
-} from '../types.js';
-import { api, getStoredToken, getStoredUsername, clearStoredToken } from '../api/client.js';
+} from '../types';
+import { api, getStoredToken, getStoredUsername, clearStoredToken } from '../api/client';
 
 interface Toast {
   id: string;

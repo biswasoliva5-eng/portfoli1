@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { usePortfolio } from '../../context/PortfolioContext.js';
+import { usePortfolio } from '../../context/PortfolioContext';
 import { Mail, Check, Trash2, Clock, CheckCircle2, User, Eye, X } from 'lucide-react';
-import { ContactMessage } from '../../types.js';
-import { api } from '../../api/client.js';
-import { DeleteConfirmModal } from '../../components/DeleteConfirmModal.js';
+import { ContactMessage } from '../../types';
+import { api } from '../../api/client';
+import { DeleteConfirmModal } from '../../components/DeleteConfirmModal';
 
 export const AdminInquiriesManager: React.FC = () => {
   const { data, reloadData, showToast } = usePortfolio();

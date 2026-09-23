@@ -1,5 +1,5 @@
 import React from 'react';
-import { usePortfolio } from '../context/PortfolioContext.js';
+import { usePortfolio } from '../context/PortfolioContext';
 
 export const AboutView: React.FC = () => {
   const { data, navigate } = usePortfolio();

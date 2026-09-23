@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { usePortfolio } from '../../context/PortfolioContext.js';
+import { usePortfolio } from '../../context/PortfolioContext';
 import { Plus, Edit2, Trash2, Globe, Check, X } from 'lucide-react';
-import { SocialLink } from '../../types.js';
-import { api } from '../../api/client.js';
-import { DeleteConfirmModal } from '../../components/DeleteConfirmModal.js';
+import { SocialLink } from '../../types';
+import { api } from '../../api/client';
+import { DeleteConfirmModal } from '../../components/DeleteConfirmModal';
 
 export const AdminSocialManager: React.FC = () => {
   const { data, reloadData, showToast } = usePortfolio();

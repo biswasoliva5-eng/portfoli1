@@ -1,6 +1,6 @@
 import React from 'react';
 import { Instagram, Linkedin, Globe, Shield } from 'lucide-react';
-import { usePortfolio } from '../context/PortfolioContext.js';
+import { usePortfolio } from '../context/PortfolioContext';
 
 export const Footer: React.FC = () => {
   const { data, navigate, isAdmin } = usePortfolio();

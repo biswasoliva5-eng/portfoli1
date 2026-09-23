@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { usePortfolio } from '../../context/PortfolioContext.js';
+import { usePortfolio } from '../../context/PortfolioContext';
 import { Upload, Check, Sliders, Image as ImageIcon } from 'lucide-react';
-import { api } from '../../api/client.js';
-import { ImageEditorModal } from '../../components/ImageEditorModal.js';
+import { api } from '../../api/client';
+import { ImageEditorModal } from '../../components/ImageEditorModal';
 
 export const AdminAboutManager: React.FC = () => {
   const { data, reloadData, showToast } = usePortfolio();

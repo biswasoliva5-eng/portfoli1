@@ -1,18 +1,18 @@
 import React, { useState } from 'react';
-import { usePortfolio } from '../../context/PortfolioContext.js';
-import { AdminLayout } from './AdminLayout.js';
-import { AdminDashboardOverview } from './AdminDashboardOverview.js';
-import { AdminArtworksManager } from './AdminArtworksManager.js';
-import { AdminYearsManager } from './AdminYearsManager.js';
-import { AdminCategoriesManager } from './AdminCategoriesManager.js';
-import { AdminHomepageManager } from './AdminHomepageManager.js';
-import { AdminAboutManager } from './AdminAboutManager.js';
-import { AdminExhibitionsManager } from './AdminExhibitionsManager.js';
-import { AdminCVManager } from './AdminCVManager.js';
-import { AdminSocialManager } from './AdminSocialManager.js';
-import { AdminInquiriesManager } from './AdminInquiriesManager.js';
-import { AdminSettingsSecurity } from './AdminSettingsSecurity.js';
-import { AdminLoginView } from './AdminLoginView.js';
+import { usePortfolio } from '../../context/PortfolioContext';
+import { AdminLayout } from './AdminLayout';
+import { AdminDashboardOverview } from './AdminDashboardOverview';
+import { AdminArtworksManager } from './AdminArtworksManager';
+import { AdminYearsManager } from './AdminYearsManager';
+import { AdminCategoriesManager } from './AdminCategoriesManager';
+import { AdminHomepageManager } from './AdminHomepageManager';
+import { AdminAboutManager } from './AdminAboutManager';
+import { AdminExhibitionsManager } from './AdminExhibitionsManager';
+import { AdminCVManager } from './AdminCVManager';
+import { AdminSocialManager } from './AdminSocialManager';
+import { AdminInquiriesManager } from './AdminInquiriesManager';
+import { AdminSettingsSecurity } from './AdminSettingsSecurity';
+import { AdminLoginView } from './AdminLoginView';
 
 export const AdminView: React.FC = () => {
   const { isAdmin, loading } = usePortfolio();

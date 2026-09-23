@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { usePortfolio } from '../../context/PortfolioContext.js';
+import { usePortfolio } from '../../context/PortfolioContext';
 import {
   FileText,
   Upload,
@@ -10,8 +10,8 @@ import {
   Clock,
   ExternalLink,
 } from 'lucide-react';
-import { api } from '../../api/client.js';
-import { DeleteConfirmModal } from '../../components/DeleteConfirmModal.js';
+import { api } from '../../api/client';
+import { DeleteConfirmModal } from '../../components/DeleteConfirmModal';
 
 export const AdminCVManager: React.FC = () => {
   const { data, reloadData, showToast } = usePortfolio();

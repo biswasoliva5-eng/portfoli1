@@ -1,6 +1,6 @@
 import React, { useEffect, useCallback } from 'react';
 import { X, ChevronLeft, ChevronRight, Maximize2, Minimize2 } from 'lucide-react';
-import { Artwork } from '../types.js';
+import { Artwork } from '../types';
 
 interface LightboxProps {
   isOpen: boolean;

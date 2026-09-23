@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react';
-import { usePortfolio } from '../context/PortfolioContext.js';
-import { Artwork } from '../types.js';
+import { usePortfolio } from '../context/PortfolioContext';
+import { Artwork } from '../types';
 
 export const HomeView: React.FC = () => {
   const { data, navigate, selectedYear, selectedCategory, clearFilters } = usePortfolio();

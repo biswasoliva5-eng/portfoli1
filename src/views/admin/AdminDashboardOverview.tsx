@@ -1,5 +1,5 @@
 import React from 'react';
-import { usePortfolio } from '../../context/PortfolioContext.js';
+import { usePortfolio } from '../../context/PortfolioContext';
 import {
   Palette,
   FolderKanban,
@@ -12,7 +12,7 @@ import {
   AlertCircle,
   ExternalLink,
 } from 'lucide-react';
-import { ContactMessage } from '../../types.js';
+import { ContactMessage } from '../../types';
 
 interface AdminDashboardOverviewProps {
   onNavigateTab: (tab: string) => void;

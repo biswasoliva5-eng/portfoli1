@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { usePortfolio } from '../../context/PortfolioContext.js';
+import { usePortfolio } from '../../context/PortfolioContext';
 import { Shield, KeyRound, Lock, Check, AlertCircle } from 'lucide-react';
-import { api } from '../../api/client.js';
+import { api } from '../../api/client';
 
 export const AdminSettingsSecurity: React.FC = () => {
   const { data, reloadData, showToast, adminUser, setAdminUser } = usePortfolio();

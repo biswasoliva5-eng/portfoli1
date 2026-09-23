@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Shield, ChevronDown } from 'lucide-react';
-import { usePortfolio } from '../context/PortfolioContext.js';
+import { usePortfolio } from '../context/PortfolioContext';
 
 export const Navbar: React.FC = () => {
   const { data, currentPath, navigate, isAdmin, adminUser } = usePortfolio();

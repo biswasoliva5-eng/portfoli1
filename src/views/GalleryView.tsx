@@ -1,8 +1,8 @@
 import React, { useState, useMemo } from 'react';
-import { usePortfolio } from '../context/PortfolioContext.js';
+import { usePortfolio } from '../context/PortfolioContext';
 import { Search, Eye, X } from 'lucide-react';
-import { Lightbox } from '../components/Lightbox.js';
-import { Artwork } from '../types.js';
+import { Lightbox } from '../components/Lightbox';
+import { Artwork } from '../types';
 
 interface GalleryViewProps {
   categorySlug: string;

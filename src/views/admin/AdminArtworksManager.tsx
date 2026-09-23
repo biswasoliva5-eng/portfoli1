@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from 'react';
-import { usePortfolio } from '../../context/PortfolioContext.js';
+import { usePortfolio } from '../../context/PortfolioContext';
 import {
   Plus,
   Search,
@@ -10,10 +10,10 @@ import {
   ExternalLink,
   Eye,
 } from 'lucide-react';
-import { Artwork } from '../../types.js';
-import { api } from '../../api/client.js';
-import { AdminArtworkEditorModal } from './AdminArtworkEditorModal.js';
-import { DeleteConfirmModal } from '../../components/DeleteConfirmModal.js';
+import { Artwork } from '../../types';
+import { api } from '../../api/client';
+import { AdminArtworkEditorModal } from './AdminArtworkEditorModal';
+import { DeleteConfirmModal } from '../../components/DeleteConfirmModal';
 
 interface AdminArtworksManagerProps {
   onAddNewRequest?: boolean;

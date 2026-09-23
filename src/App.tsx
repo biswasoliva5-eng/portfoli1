@@ -1,17 +1,17 @@
 import React, { useEffect, useState } from 'react';
-import { PortfolioProvider, usePortfolio } from './context/PortfolioContext.js';
-import { Sidebar } from './components/Sidebar.js';
-import { ToastContainer } from './components/ToastContainer.js';
-import { HomeView } from './views/HomeView.js';
-import { GalleryView } from './views/GalleryView.js';
-import { ArtworkDetailView } from './views/ArtworkDetailView.js';
-import { AboutView } from './views/AboutView.js';
-import { ExhibitionsView } from './views/ExhibitionsView.js';
-import { CVView } from './views/CVView.js';
-import { ContactView } from './views/ContactView.js';
-import { CoverView } from './views/CoverView.js';
-import { AdminView } from './views/admin/AdminView.js';
-import { AdminLoginView } from './views/admin/AdminLoginView.js';
+import { PortfolioProvider, usePortfolio } from './context/PortfolioContext';
+import { Sidebar } from './components/Sidebar';
+import { ToastContainer } from './components/ToastContainer';
+import { HomeView } from './views/HomeView';
+import { GalleryView } from './views/GalleryView';
+import { ArtworkDetailView } from './views/ArtworkDetailView';
+import { AboutView } from './views/AboutView';
+import { ExhibitionsView } from './views/ExhibitionsView';
+import { CVView } from './views/CVView';
+import { ContactView } from './views/ContactView';
+import { CoverView } from './views/CoverView';
+import { AdminView } from './views/admin/AdminView';
+import { AdminLoginView } from './views/admin/AdminLoginView';
 import { Menu, X } from 'lucide-react';
 
 const AppContent: React.FC = () => {

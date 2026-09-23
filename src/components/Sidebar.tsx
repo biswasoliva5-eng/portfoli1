@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { usePortfolio } from '../context/PortfolioContext.js';
+import { usePortfolio } from '../context/PortfolioContext';
 import { Menu, X } from 'lucide-react';
 
 interface SidebarProps {

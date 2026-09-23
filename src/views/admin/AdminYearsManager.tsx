@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import { usePortfolio } from '../../context/PortfolioContext.js';
+import { usePortfolio } from '../../context/PortfolioContext';
 import { Plus, Trash2, Calendar, Check, AlertCircle, ArrowUp, ArrowDown, Clock } from 'lucide-react';
-import { api } from '../../api/client.js';
-import { DeleteConfirmModal } from '../../components/DeleteConfirmModal.js';
+import { api } from '../../api/client';
+import { DeleteConfirmModal } from '../../components/DeleteConfirmModal';
 
 export const AdminYearsManager: React.FC = () => {
   const { data, reloadData, showToast } = usePortfolio();
