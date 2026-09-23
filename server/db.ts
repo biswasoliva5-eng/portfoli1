@@ -40,10 +40,13 @@ if (!fs.existsSync(DATA_DIR)) {
 }
 
 function getInitialDatabase(): DatabaseSchema {
+  const initialUsername = process.env.ADMIN_USERNAME?.trim() || 'olivabiswas';
+  const initialPassword = process.env.ADMIN_PASSWORD?.trim() || 'oliva23';
+
   const adminAccount: AdminAccount = {
     id: 'admin-primary',
-    username: 'olivabiswas',
-    passwordHash: hashPassword('oliva23'),
+    username: initialUsername,
+    passwordHash: hashPassword(initialPassword),
     updatedAt: new Date().toISOString(),
   };
 
